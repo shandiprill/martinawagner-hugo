@@ -1,0 +1,54 @@
+<!-- Scripts -->
+<script src="/js/jquery.min.js"></script>
+<script src="/js/popper.min.js"></script>
+<script src="/js/bootstrap.min.js"></script>
+<script src="/js/jquery.easing.min.js"></script>
+<script src="/js/magnific-popup.js"></script>
+<script src="/js/validator.min.js"></script>
+<script src="/js/scripts.js"></script>
+
+<!-- Custom initialization -->
+<script>
+    $(document).ready(function() {
+
+        // Preloader
+        $(window).on('load', function() {
+            $('.spinner-wrapper').fadeOut('slow');
+        });
+
+        // Navbar collapse on scroll
+        $(window).scroll(function() {
+            if ($('.navbar').offset().top > 20) {
+                $('.navbar').addClass('top-nav-collapse');
+            } else {
+                $('.navbar').removeClass('top-nav-collapse');
+            }
+        });
+
+        // Smooth scroll
+        $('.page-scroll').on('click', function(event) {
+            var $anchor = $(this);
+            $('html, body').stop().animate({
+                scrollTop: $($anchor.attr('href')).offset().top
+            }, 600, 'easeInOutExpo');
+            event.preventDefault();
+        });
+
+        // Mobile menu auto-close
+        $('.navbar-nav').on('click', function() {
+            $('.navbar-collapse').collapse('hide');
+        });
+
+        // Form field animations
+        $('.form-group').on('keyup', function() {
+            if ($(this).val()) {
+                $(this).addClass('notEmpty');
+            } else {
+                $(this).removeClass('notEmpty');
+            }
+        });
+
+        // Back to top button
+        var backToTopButton = <!-- This will be created dynamically by scripts.js -->
+    });
+</script>

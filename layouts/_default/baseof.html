@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    {{ partial "head.html" . }}
+</head>
+<body data-spy="scroll" data-target=".fixed-top">
+
+    {{ partial "preloader.html" . }}
+
+    {{ partial "navbar.html" . }}
+
+    {{ block "main" . }}{{ end }}
+
+    {{ partial "footer.html" . }}
+
+    {{ partial "scripts.html" . }}
+
+</body>
+</html>

@@ -1,0 +1,12 @@
+baseURL = "https://martinawagner.com.br"
+languageCode = "pt-br"
+title = "Dra. Martina Wagner"
+
+[params]
+  description = "Médica Ginecologista e Obstetra. Ênfase em Ginecologia Oncológica e em Cirurgia Minimamente Invasiva."
+  keywords = "dra martina, dra martina wagner, dra martina gineco, dra martina wagner gineco, dra martina gineco sp, dra martina icesp, dra martina histero, histeroscopia, dra martina histeroscopia, dra martina consultorio, dra martina cirurgia, dra martina diu, gineco jardins sp, gineco jardins sao paulo, consultorio, contato, especialista"
+
+[deployment]
+  [[deployment.targets]]
+    name = "cloudflare"
+    url = "https://api.cloudflare.com/client/v4/accounts/{ACCOUNT_ID}/pages/projects/{PROJECT_NAME}"

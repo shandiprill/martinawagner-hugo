@@ -1,0 +1,130 @@
+<!-- Header -->
+<header id="header" class="header">
+    <div class="header-content">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="text-container">
+                        <h1><br><br></h1>
+                        <p class="p-heading p-large"></p>
+                    </div>
+                </div><!-- end of col -->
+            </div><!-- end of row -->
+        </div><!-- end of container -->
+    </div><!-- end of header-content -->
+</header>
+<!-- end of header -->
+
+<!-- FORMAÇÃO E EXPERIÊNCIA -->
+<section id="intro" class="basic-1">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-5">
+                <div class="text-container">
+                    <div class="section-title">FORMAÇÃO E EXPERIÊNCIA</div>
+                    <br>
+                    <p>Médica Colaboradora do Serviço de Ginecologia Oncológica do Instituto do Câncer do Estado de São Paulo (ICESP – USP).</p>
+                    <br>
+                    <p>Título Especialista em Ginecologia e Obstetrícia (TEGO) pela Federação Brasileira de Ginecologia e Obstetrícia (FEBRASGO).</p>
+                    <br>
+                    <p>Residência Médica em Ginecologia Oncológica realizada no Instituto do Câncer do Estado de São Paulo (ICESP) - Departamento de Obstetrícia e Ginecologia da Faculdade de Medicina da Universidade de São Paulo (USP).</p>
+                    <br>
+                    <p>Residência Médica em Ginecologia e Obstetrícia pela Pontifícia Universidade Católica do Rio Grande do Sul (PUCRS).</p>
+                    <br>
+                    <p>Graduação em Medicina pela Pontifícia Universidade Católica do Rio Grande do Sul (PUCRS).</p>
+                </div><!-- end of text-container -->
+            </div><!-- end of col -->
+            <div class="col-lg-7">
+                <div class="card-image">
+                    <br>
+                    <img src="/images/intro-office.png" alt="alternative" class="img-fluid">
+                </div><!-- end of image-container -->
+            </div><!-- end of col -->
+        </div><!-- end of row -->
+    </div><!-- end of container -->
+</section>
+
+<!-- CONSULTÓRIO -->
+<section id="consultorio" class="cards-2">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12">
+                <div class="section-title">CONSULTÓRIO</div>
+            </div><!-- end of col -->
+        </div><!-- end of row -->
+        <div class="row">
+            <div class="col-lg-6">
+                <div class="img-holder"><img src="/images/consultorio3.jpg" alt=""></div>
+                <div class="img-holder"><img src="/images/consultorio4.jpg" alt=""></div>
+                <div class="img-holder"><img src="/images/consultorio1.jpg" alt=""></div>
+            </div>
+            <div class="col-lg-6">
+                <div class="img-holder"><img src="/images/consultorio2.jpg" alt=""></div>
+                <div class="img-holder"><img src="/images/consultorio8.jpeg" alt=""></div>
+                <div class="img-holder"><img src="/images/consultorio5.jpeg" alt=""></div>
+            </div><!-- end of col -->
+        </div><!-- end of row -->
+    </div>
+</section>
+
+<!-- ÁREAS DE ATUAÇÃO -->
+<section id="services" class="basic-1">
+    <div class="container">
+        <div class="section-title">ÁREAS DE ATUAÇÃO</div>
+        <div class="cards-1">
+            <div class="row">
+                {{ $specialties := .Site.Data.specialties.specialties }}
+                {{ range $specialties }}
+                <div class="col-lg-4">
+                    <div>
+                        <center>
+                            <span class="fa-stack">
+                                <span class="{{ .icon }}"></span>
+                            </span>
+                            <h4 class="card-title">{{ .title }}</h4>
+                        </center>
+                    </div>
+                </div>
+                {{ end }}
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- AGENDE UMA CONSULTA -->
+<section id="contact" class="cards-2">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-5">
+                <div class="text-container">
+                    <div class="section-title">AGENDE UMA CONSULTA</div>
+                    <br>
+                    <ul class="list-unstyled li-space-lg">
+                        <li class="address"><i class="fas fa-map-marker-alt"></i>
+                            <a href="https://www.google.com/maps/place/Av.+Paulista,+1048+-+Bela+Vista,+S%C3%A3o+Paulo+-+SP,+01310-100/@-23.5645009,-46.6544325,17z/data=!3m1!4b1!4m6!3m5!1s0x94ce59c7dd559ae7:0xe317d088d45054b4!8m2!3d-23.5645009!4d-46.6522438!16s%2Fg%2F11bw41f052" target="_blank">Avenida Paulista, 1048, 18° andar.</a>
+                        </li>
+                        <li><i class="fab fa-whatsapp"></i>
+                            <a href="https://api.whatsapp.com/send?phone=551131922616&text=Eu%20gostaria%20de%20agendar%20uma%20consulta%20com%20a%20Dra.%20Martina." target="_blank">11 3192-2616</a>
+                        </li>
+                        <li><i class="fas fa-envelope"></i>
+                            <a href="mailto:consultorio@martinawagner.com.br">consultorio@martinawagner.com.br</a>
+                        </li>
+                        <li><i class="fab fa-instagram"></i>
+                            <a href="https://www.instagram.com/martinawgnr/?hl=pt" target="_blank">@martinawgnr</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-lg-7">
+                <div class="text-container">
+                    <div class="section-title">LOCALIZAÇÃO</div><br>
+                    <center>
+                        <div class="map-responsive">
+                            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3657.1097664633594!2d-46.65443248509896!3d-23.56450088468135!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce59c7dd559ae7%3A0xe317d088d45054b4!2sAv.%20Paulista%2C%201048%20-%20Bela%20Vista%2C%20S%C3%A3o%20Paulo%20-%20SP%2C%2001310-100!5e0!3m2!1spt-BR!2sbr!4v1681261382863!5m2!1spt-BR!2sbr" width="450" height="450" frameborder="0" style="border:0" allowfullscreen></iframe><br>
+                        </div>
+                    </center>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
