@@ -42,6 +42,17 @@ git push origin v0.2
   - ✅ SEO otimizado para português
 - **Status:** ✅ **DEPLOYED**
 
+### **Versão 0.2** (2026-02-28)
+- **Tipo:** Melhoria de Manutenção
+- **Descrição:** Tornar seção "Formação e Experiência" editável via YAML
+- **Features:**
+  - ✅ Seção "Formação e Experiência" agora usa arquivo YAML
+  - ✅ Conteúdo editável: título, texto, imagem e classe de fundo
+  - ✅ Layout Bootstrap mantido (col-lg-5 texto, col-lg-7 imagem)
+  - ✅ IDs de seção atualizadas (intro → formation-experience)
+  - ✅ Integrado com classes CSS existentes (.basic-1, .text-container, etc.)
+- **Status:** ✅ **DEPLOYED**
+
 ### **Versões Futuras**
 - **0.2:** Atualizações de conteúdo e correções
 - **0.3:** Melhorias técnicas e performance
