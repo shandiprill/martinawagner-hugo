@@ -18,28 +18,24 @@
 <!-- end of header -->
 
 <!-- FORMAÇÃO E EXPERIÊNCIA -->
-<section id="intro" class="basic-1">
+{{ $data := .Site.Data.formation_experience }}
+<section id="formation-experience" class="{{ $data.background_class }}">
     <div class="container">
         <div class="row">
             <div class="col-lg-5">
                 <div class="text-container">
-                    <div class="section-title">FORMAÇÃO E EXPERIÊNCIA</div>
+                    <div class="section-title">{{ $data.section_title }}</div>
                     <br>
-                    <p>Médica Colaboradora do Serviço de Ginecologia Oncológica do Instituto do Câncer do Estado de São Paulo (ICESP – USP).</p>
+                    {{ range $data.content }}
+                    <p>{{ . }}</p>
                     <br>
-                    <p>Título Especialista em Ginecologia e Obstetícia (TEGO) pela Federação Brasileira de Ginecologia e Obstetícia (FEBRASGO).</p>
-                    <br>
-                    <p>Residência Médica em Ginecologia Oncológica realizada no Instituto do Câncer do Estado de São Paulo (ICESP) - Departamento de Obstetícia e Ginecologia da Faculdade de Medicina da Universidade de São Paulo (USP).</p>
-                    <br>
-                    <p>Residência Médica em Ginecologia e Obstetícia pela Pontifícia Universidade Católica do Rio Grande do Sul (PUCRS).</p>
-                    <br>
-                    <p>Graduação em Medicina pela Pontifícia Universidade Católica do Rio Grande do Sul (PUCRS).</p>
+                    {{ end }}
                 </div><!-- end of text-container -->
             </div><!-- end of col -->
             <div class="col-lg-7">
                 <div class="card-image">
                     <br>
-                    <img src="/images/intro-office.png" alt="alternative" class="img-fluid">
+                    <img src="{{ $data.image.path }}" alt="{{ $data.image.alt }}" class="img-fluid">
                 </div><!-- end of image-container -->
             </div><!-- end of col -->
         </div><!-- end of row -->
