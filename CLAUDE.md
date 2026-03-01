@@ -1,7 +1,7 @@
 # Gerenciamento de Versões - Dra. Martina Wagner Hugo Site
 
 ## 🎯 **Projeto:** Dra. Martina Wagner - Site Hugo
-**Versão Atual:** 0.1 (Criada em 2026-02-28)
+**Versão Atual:** 0.3 (Criada em 2026-03-01)
 **Repositório:** https://github.com/shandiprill/martinawagner-hugo
 
 ---
@@ -53,9 +53,20 @@ git push origin v0.2
   - ✅ Integrado com classes CSS existentes (.basic-1, .text-container, etc.)
 - **Status:** ✅ **DEPLOYED**
 
+### **Versão 0.3** (2026-03-01)
+- **Tipo:** Melhoria de Navegação
+- **Descrição:** Converter navbar para usar YAML e links de âncora
+- **Features:**
+  - ✅ Navbar agora gerado dinamicamente via /data/navbar.yml
+  - ✅ Links corrigidos para usar âncoras internas (#header, #intro, #consultorio, etc.)
+  - ✅ Smooth scroll implementado com animação de 600ms
+  - ✅ Menu mobile mantém funcionalidade com auto-close
+  - ✅ Estilização Bootstrap preservada
+- **Status:** ✅ **DEPLOYED**
+
 ### **Versões Futuras**
-- **0.2:** Atualizações de conteúdo e correções
-- **0.3:** Melhorias técnicas e performance
+- **0.4:** Atualizações de conteúdo e correções
+- **0.5:** Melhorias técnicas e performance
 - **1.0:** Versão estável com todas funcionalidades
 
 ---
@@ -141,5 +152,5 @@ git checkout master
 
 ---
 
-**Last Updated:** 2026-02-28
-**Status:** ✅ **VERSÃO 0.1 CRIADA COM SUCESSO**
+**Last Updated:** 2026-03-01
+**Status:** ✅ **VERSÃO 0.3 CRIADA COM SUCESSO**
