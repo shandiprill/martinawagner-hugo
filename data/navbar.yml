@@ -1,19 +1,10 @@
-navbar:
-  title: "Dra. Martina Wagner"
-  items:
-    - text: "FORMAÇÃO"
-      url: "#formation-experience"
-      weight: 1
-    - text: "CONSULTÓRIO"
-      url: "#consultorio"
-      weight: 2
-    - text: "ÁREAS DE ATUAÇÃO"
-      url: "#services"
-      weight: 3
-    - text: "AGENDE UMA CONSULTA"
-      url: "#contact"
-      weight: 4
-  responsive:
-    mobile_breakpoint: "768px"
-    mobile_menu_label: "Menu"
-    mobile_menu_icon: "☺"
+title: "Dra. Martina Wagner"
+items:
+  - text: "FORMAÇÃO"
+    url: "#formation-experience"
+  - text: "CONSULTÓRIO"
+    url: "#consultorio"
+  - text: "ÁREAS DE ATUAÇÃO"
+    url: "#services"
+  - text: "AGENDE UMA CONSULTA"
+    url: "#contact"
