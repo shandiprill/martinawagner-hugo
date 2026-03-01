@@ -1,0 +1,19 @@
+navbar:
+  title: "Dra. Martina Wagner"
+  items:
+    - text: "Início"
+      url: "/"
+      weight: 1
+    - text: "Especialidades"
+      url: "/especialidades"
+      weight: 2
+    - text: "Formação e Experiência"
+      url: "/formacao-experiencia"
+      weight: 3
+    - text: "Contato"
+      url: "/contato"
+      weight: 4
+  responsive:
+    mobile_breakpoint: "768px"
+    mobile_menu_label: "Menu"
+    mobile_menu_icon: "☺"
