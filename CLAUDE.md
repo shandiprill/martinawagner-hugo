@@ -62,6 +62,9 @@ git push origin v0.2
   - ✅ Smooth scroll implementado com animação de 600ms
   - ✅ Menu mobile mantém funcionalidade com auto-close
   - ✅ Estilização Bootstrap preservada
+  - ✅ Footer transformado para YAML dinâmico (`data/footer.yml`)
+  - ✅ Estrutura YAML simplificada (flat structure)
+  - ✅ Build Hugo otimizado com sucesso
 - **Status:** ✅ **DEPLOYED**
 
 ### **Versões Futuras**
@@ -94,7 +97,53 @@ git diff v0.1
 git diff v0.1..v0.2
 ```
 
-### **Reverter Mudanças**
+## 📁 **Estrutura de Dados**
+
+### **Arquivos YAML em /data/**
+
+| Arquivo | Descrição | Usado em | Estrutura |
+|---------|-----------|----------|----------|
+| `navbar.yml` | Menu de navegação | `partials/navbar.html` | Nested (com items list) |
+| `consultorio.yml` | Seção Consultório | `index.html` (cards-2) | Flat |
+| `formation_experience.yml` | Seção Formação | `index.html` (basic-1) | Flat |
+| `specialties.yml` | Áreas de atuação | `index.html` (cards-1) | Nested (list only) |
+| `footer.yml` | Informações do rodapé | `partials/footer.html` | Flat |
+
+#### **Padrões de Estrutura YAML:**
+
+**Padrão 1 - Flat (dados simples):**
+```yaml
+name: "Dra. Martina Wagner"
+site: "www.martinawagner.com.br"
+address: "Avenida Paulista, 1048, 18° andar. São Paulo - SP."
+```
+Usado em: `consultorio.yml`, `formation_experience.yml`, `footer.yml`
+
+**Padrão 2 - Nested (dados complexos/coleções):**
+```yaml
+navbar:
+  title: "Dra. Martina Wagner"
+  items:
+    - text: "Início"
+      url: "#header"
+      weight: 1
+```
+Usado em: `navbar.yml`, `specialties.yml`
+
+### **Editar Conteúdo - Quick Reference**
+
+| O que editar? | Arquivo | Notas |
+|---------------|---------|-------|
+| texto da navbar | `data/navbar.yml` | Editar `items[].text` |
+| links da navbar | `data/navbar.yml` | Editar `items[].url` (âncoras #section) |
+| título da seção | `data/[section].yml` | Editar `section_title` (consultorio, formation_experience) |
+| imagens do consultório | `data/consultorio.yml` | Editar array `images[]` com `src` e `alt` |
+| especialidades médicas | `data/specialties.yml` | Editar array `specialties[]` com `title` e `icon` |
+| footer (nome, site, endereço) | `data/footer.yml` | Editar campos `name`, `site`, `address` |
+
+---
+
+## 🚀 **Deploy Automático**
 ```bash
 # Reverter para versão específica
 git checkout v0.1
@@ -123,6 +172,7 @@ git checkout master
 
 ### **Antes de Criar Nova Versão**
 - [ ] Testar localmente: `hugo server --buildDrafts --minify`
++- [ ] Verificar hot-reload: `hugo server --open` (opcional)
 - [ ] Verificar build: `hugo --gc --minify`
 - [ ] Validar HTML/CSS
 - [ ] Testar responsividade em móveis
