@@ -1,0 +1,16 @@
+consultorio:
+  section_title: "CONSULTÓRIO"
+  background_class: "cards-2"
+  images:
+    - src: "/images/consultorio3.jpg"
+      alt: "Imagem do consultório 1"
+    - src: "/images/consultorio4.jpg"
+      alt: "Imagem do consultório 2"
+    - src: "/images/consultorio1.jpg"
+      alt: "Imagem do consultório 3"
+    - src: "/images/consultorio2.jpg"
+      alt: "Imagem do consultório 4"
+    - src: "/images/consultorio8.jpeg"
+      alt: "Imagem do consultório 5"
+    - src: "/images/consultorio5.jpeg"
+      alt: "Imagem do consultório 6"
