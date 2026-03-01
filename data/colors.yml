@@ -1,0 +1,47 @@
+# Cores do Projeto Dra. Martina Wagner
+# Edite esses valores para alterar o esquema de cores do site
+
+# Cores Principais
+primary_color: "#14bf98"      # Verde principal (botões, ícones)
+secondary_color: "#bf5f7a"    # Roxo secundário (backgrounds, alternativo)
+accent_color: "#bf6dba"       # Roxo acento (destaques)
+primary_background: "#bf5f7aff"  # Cor principal de fundo (navbar e footer)
+
+# Cores de Fundo
+light_gray_bg: "#fbfbfb"      # Fundo claro (padrão)
+dark_blue_bg: "#153e52"       # Fundo azul escuro
+medium_gray_bg: "#113448"     # Fundo cinza médio (navbar, footer)
+light_blue_bg: "#2a5d77"      # Fundo azul claro
+medium_blue_bg: "#39728f"     # Fundo azul médio
+
+# Cores de Texto
+heading_color: "#484a46"      # Texto de títulos (preto)
+text_color: "#787976"         # Texto principal (cinza)
+light_text_color: "#dfe5ec"   # Texto claro (cinza claro)
+
+# Cores de Borda e Detalhes
+gray_border: "#dadada"        # Borda cinza
+medium_gray: "#7b7e85"        # Cinza médio
+light_gray: "#a1a1a1"         # Cinza claro
+
+# Cores de Destaque
+warning_color: "#b93636"      # Vermelho (alertas, erros)
+accent_pink: "#daa3b3"        # Rosa acento
+
+# Cores de Background Sections (classes usadas no HTML)
+background_classes:
+  basic_1: "basic-1"           # Fundo para seção Formação (usa light_gray_bg)
+  cards_1: "cards-1"           # Fundo para seção Áreas (usa light_gray_bg)
+  cards_2: "cards-2"           # Fundo para seções Consultório e Contato (usa light_gray_bg)
+  header: "header"             # Fundo para header (usa dark_blue_bg)
+
+# Cores de Fontes do Google Fonts
+primary_font: "'Open Sans', sans-serif"      # Fonte principal (Open Sans)
+secondary_font: "'Montserrat', sans-serif"   # Fonte secundária (Montserrat)
+
+# Notas:
+# - As cores das backgrounds são aplicadas via classes CSS no HTML
+# - Para alterar uma cor de background, edite a classe correspondente no CSS
+# - As cores dos botões e elementos interativos usam a primary_color
+# - O navbar e footer usam a medium_gray_bg
+# - Textos principais usam text_color, títulos usam heading_color

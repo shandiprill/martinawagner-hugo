@@ -1,0 +1,7 @@
+header:
+  logo:
+    path: "/images/header-background.jpg"
+    alt: "Logo da Dra. Martina Wagner"
+  background_image:
+    path: "/images/header-background.jpg"
+    alt: "Imagem de fundo do header"
