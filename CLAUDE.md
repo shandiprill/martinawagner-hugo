@@ -1,7 +1,7 @@
 # Gerenciamento de Versões - Dra. Martina Wagner Hugo Site
 
 ## 🎯 **Projeto:** Dra. Martina Wagner - Site Hugo
-**Versão Atual:** 0.3 (Criada em 2026-03-01)
+**Versão Atual:** 0.4 (Criada em 2026-03-01)
 **Repositório:** https://github.com/shandiprill/martinawagner-hugo
 
 ---
@@ -80,9 +80,21 @@ git push origin v0.2
   - ✅ Build Hugo otimizado com sucesso
 - **Status:** ✅ **DEPLOYED**
 
+### **Versão 0.5** (2026-03-01)
+- **Tipo:** Revisão e Otimização
+- **Descrição:** Revisão de divs do index.html e ajuste da navbar
+- **Features:**
+  - ✅ Revisão completa da estrutura de divs no index.html
+  - ✅ Removido item "Início" da navbar (redundante)
+  - ✅ Corrigido IDs de seção: `#intro` → `#formation-experience`
+  - ✅ Navbar otimizada com 4 itens (redução de 5 para 4)
+  - ✅ IDs de seção alinhados com estrutura HTML
+  - ✅ Build Hugo validado sem erros
+  - ✅ Navegação testada e funcionando corretamente
+- **Status:** ✅ **DEPLOYED**
+
 ### **Versões Futuras**
-- **0.4:** Atualizações de conteúdo e correções
-- **0.5:** Melhorias técnicas e performance
+- **0.6:** Melhorias técnicas e performance
 - **1.0:** Versão estável com todas funcionalidades
 
 ---
@@ -218,4 +230,4 @@ git checkout master
 ---
 
 **Last Updated:** 2026-03-01
-**Status:** ✅ **VERSÃO 0.4 CRIADA COM SUCESSO**
+**Status:** ✅ **VERSÃO 0.5 CRIADA COM SUCESSO**

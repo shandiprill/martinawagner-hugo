@@ -1,21 +1,18 @@
 navbar:
   title: "Dra. Martina Wagner"
   items:
-    - text: "Início"
-      url: "#header"
-      weight: 1
     - text: "FORMAÇÃO"
-      url: "#intro"
-      weight: 2
+      url: "#formation-experience"
+      weight: 1
     - text: "CONSULTÓRIO"
       url: "#consultorio"
-      weight: 3
+      weight: 2
     - text: "ÁREAS DE ATUAÇÃO"
       url: "#services"
-      weight: 4
+      weight: 3
     - text: "AGENDE UMA CONSULTA"
       url: "#contact"
-      weight: 5
+      weight: 4
   responsive:
     mobile_breakpoint: "768px"
     mobile_menu_label: "Menu"
