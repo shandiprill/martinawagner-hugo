@@ -43,16 +43,15 @@
 </section>
 
 <!-- CONSULTÓRIO -->
-{{ $data := .Site.Data.consultorio }}
-<section id="consultorio" class="{{ $data.background_class }}">
+<section id="consultorio" class="{{ .Site.Data.consultorio.background_class }}">
     <div class="container">
         <div class="row">
             <div class="col-lg-12">
-                <div class="section-title">{{ $data.section_title }}</div>
+                <div class="section-title">{{ .Site.Data.consultorio.section_title }}</div>
             </div>
         </div>
         <div class="row">
-            {{ range $data.images }}
+            {{ range .Site.Data.consultorio.images }}
             <div class="col-lg-6">
                 <div class="img-holder">
                     <img src="{{ .src }}" alt="{{ .alt }}">
