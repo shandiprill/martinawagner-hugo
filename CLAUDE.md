@@ -67,6 +67,18 @@ git push origin v0.2
   - ✅ Build Hugo otimizado com sucesso
 - **Status:** ✅ **DEPLOYED**
 
+### **Versão 0.4** (2026-03-01)
+- **Tipo:** Melhoria de Contato
+- **Descrição:** Converter seção de contato para usar YAML dinâmico
+- **Features:**
+  - ✅ Seção de contato agora usa arquivo `data/contact.yml`
+  - ✅ Informações de contato editáveis: endereço, telefone, email, Instagram
+  - ✅ Mapa integrado via iframe do Google Maps
+  - ✅ Layout Bootstrap preservado (col-lg-5 texto, col-lg-7 mapa)
+  - ✅ Classes CSS existentes mantidas (.cards-2, .text-container, etc.)
+  - ✅ Build Hugo otimizado com sucesso
+- **Status:** ✅ **DEPLOYED**
+
 ### **Versões Futuras**
 - **0.4:** Atualizações de conteúdo e correções
 - **0.5:** Melhorias técnicas e performance
@@ -105,6 +117,7 @@ git diff v0.1..v0.2
 |---------|-----------|----------|----------|
 | `navbar.yml` | Menu de navegação | `partials/navbar.html` | Nested (com items list) |
 | `consultorio.yml` | Seção Consultório | `index.html` (cards-2) | Flat |
+| `contact.yml` | Seção Contato | `index.html` (cards-2) | Flat |
 | `formation_experience.yml` | Seção Formação | `index.html` (basic-1) | Flat |
 | `specialties.yml` | Áreas de atuação | `index.html` (cards-1) | Nested (list only) |
 | `footer.yml` | Informações do rodapé | `partials/footer.html` | Flat |
@@ -136,10 +149,11 @@ Usado em: `navbar.yml`, `specialties.yml`
 |---------------|---------|-------|
 | texto da navbar | `data/navbar.yml` | Editar `items[].text` |
 | links da navbar | `data/navbar.yml` | Editar `items[].url` (âncoras #section) |
-| título da seção | `data/[section].yml` | Editar `section_title` (consultorio, formation_experience) |
+| título da seção | `data/[section].yml` | Editar `section_title` (consultorio, formation_experience, contact) |
 | imagens do consultório | `data/consultorio.yml` | Editar array `images[]` com `src` e `alt` |
 | especialidades médicas | `data/specialties.yml` | Editar array `specialties[]` com `title` e `icon` |
 | footer (nome, site, endereço) | `data/footer.yml` | Editar campos `name`, `site`, `address` |
+| informações de contato | `data/contact.yml` | Editar campos `contact_info` e `map` |
 
 ---
 
@@ -203,4 +217,4 @@ git checkout master
 ---
 
 **Last Updated:** 2026-03-01
-**Status:** ✅ **VERSÃO 0.3 CRIADA COM SUCESSO**
+**Status:** ✅ **VERSÃO 0.4 CRIADA COM SUCESSO**
