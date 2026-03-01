@@ -100,7 +100,7 @@
                             <a href="https://www.google.com/maps/place/{{ $contact.contact_info.address | urlize }}" target="_blank">{{ $contact.contact_info.address }}</a>
                         </li>
                         <li><i class="fab fa-whatsapp"></i>
-                            <a href="https://api.whatsapp.com/send?phone=55{{ $contact.contact_info.phone | replace " " "" | replace "-" "" }}&text=Eu%20gostaria%20de%20agendar%20uma%20consulta%20com%20a%20Dra.%20Martina." target="_blank">{{ $contact.contact_info.phone }}</a>
+                            <a href="https://api.whatsapp.com/send?phone=55{{ $contact.contact_info.phone | replace " " "" | replace "-" "" }}&text={{ $contact.contact_info.whatsapp_message | urlquery }}" target="_blank">{{ $contact.contact_info.phone }}</a>
                         </li>
                         <li><i class="fas fa-envelope"></i>
                             <a href="mailto:{{ $contact.contact_info.email }}">{{ $contact.contact_info.email }}</a>

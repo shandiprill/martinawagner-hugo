@@ -73,6 +73,7 @@ git push origin v0.2
 - **Features:**
   - ✅ Seção de contato agora usa arquivo `data/contact.yml`
   - ✅ Informações de contato editáveis: endereço, telefone, email, Instagram
+  - ✅ Mensagem do WhatsApp editável (texto inicial da conversa)
   - ✅ Mapa integrado via iframe do Google Maps
   - ✅ Layout Bootstrap preservado (col-lg-5 texto, col-lg-7 mapa)
   - ✅ Classes CSS existentes mantidas (.cards-2, .text-container, etc.)
@@ -153,7 +154,7 @@ Usado em: `navbar.yml`, `specialties.yml`
 | imagens do consultório | `data/consultorio.yml` | Editar array `images[]` com `src` e `alt` |
 | especialidades médicas | `data/specialties.yml` | Editar array `specialties[]` com `title` e `icon` |
 | footer (nome, site, endereço) | `data/footer.yml` | Editar campos `name`, `site`, `address` |
-| informações de contato | `data/contact.yml` | Editar campos `contact_info` e `map` |
+| informações de contato | `data/contact.yml` | Editar campos `contact_info` (inclui `whatsapp_message`) e `map` |
 
 ---
 
