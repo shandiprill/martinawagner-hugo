@@ -1,7 +1,7 @@
 # Gerenciamento de Versões - Dra. Martina Wagner Hugo Site
 
 ## 🎯 **Projeto:** Dra. Martina Wagner - Site Hugo
-**Versão Atual:** 0.6 (Criada em 2026-03-01)
+**Versão Atual:** 0.7 (Criada em 2026-03-05)
 **Repositório:** https://github.com/shandiprill/martinawagner-hugo
 
 ---
@@ -104,6 +104,15 @@ git push origin v0.2
   - ✅ Performance melhorada: build time reduzido 42% (80ms → 46ms)
   - ✅ Estrutura mais limpa e manutenível
 - **Status:** ✅ **DEPLOYED**
+
+### **Versão 0.7** (2026-03-05)
+- **Tipo:** Manutenção de Documentação
+- **Descrição:** Atualização do CLAUDE.md com informações recentes do projeto
+- **Features:**
+  - ✅ Data atualizada para 2026-03-05
+  - ✅ Nova versão criada no histórico
+  - ✅ Status atualizado no final do arquivo
+- **Status:** 📝 **EM ANDAMENTO**
 
 ### **Versões Futuras**
 - **1.0:** Versão estável com todas funcionalidades
@@ -210,7 +219,7 @@ git checkout master
 
 ### **Antes de Criar Nova Versão**
 - [ ] Testar localmente: `hugo server --buildDrafts --minify`
-+- [ ] Verificar hot-reload: `hugo server --open` (opcional)
+- [ ] Verificar hot-reload: `hugo server --open` (opcional)
 - [ ] Verificar build: `hugo --gc --minify`
 - [ ] Validar HTML/CSS
 - [ ] Testar responsividade em móveis
@@ -240,5 +249,5 @@ git checkout master
 
 ---
 
-**Last Updated:** 2026-03-01
-**Status:** ✅ **VERSÃO 0.5 CRIADA COM SUCESSO**
+**Last Updated:** 2026-03-05
+**Status:** 📝 **ATUALIZAÇÃO DE DOCUMENTAÇÃO EM ANDAMENTO**
